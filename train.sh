@@ -1,0 +1,11 @@
+python kd_mosaic.py \
+--gpu 1 -b 64 --lr 9e-3 \
+--pipeline=multi_teacher \
+--teacher resnet8_t \
+--student resnet18 \
+--dataset cifar10 --unlabeled cifar10 \
+--epochs 500 --fp16 \
+--ckpt_path /data/repo/code/1sl/DFFK/checkpoints/resnet18/pure_b64lr9e-3_500e/ \
+--T 10001.0 --alpha 1.0 --seed 1  \
+--logfile pure_b64lr9e-3_500e --use_maxIters \
+--from_teacher_ckpt /home/lsl/Research/DFFKD/mosaic_core/checkpoints/pretrained_teachers/
