@@ -243,7 +243,8 @@ class OneTeacher:
         param_ds = []
         for n in range(self.args.N_PARTIES):
             # 这里为discriminator的最后一个卷积层挂上了用于保护隐私的dp_conv_hook
-            self.netDS[n].conv3.register_full_backward_hook(dp_conv_hook)
+            if self.args.clip:
+                self.netDS[n].conv3.register_full_backward_hook(dp_conv_hook)
             param_ds += list(self.netDS[n].parameters())
 
         self.optim_d = torch.optim.Adam(
@@ -479,8 +480,8 @@ class OneTeacher:
             # 因此这里cnt_disc用于指示本轮更新中有几个discriminator参与了loss计算，并对最终loss总和取平均
             cnt_disc = 0 
             for localid in selectN:
-                for p in self.netDS[localid].parameters():
-                    p.requires_grad = True
+                # for p in self.netDS[localid].parameters():
+                #     p.requires_grad = True
                 # 如果当前待学习的数据超出了本地拥有数据的总和，则跳过该discriminator
                 if self.cur_step_per_disc[localid] >= self.steps_per_disc[localid]:
                     continue
@@ -529,9 +530,9 @@ class OneTeacher:
         loss_gan = []
         with self.args.autocast():
             ############# 计算loss_gan时固定梯度 ############
-            for localid in selectN:
-                for p in self.netDS[localid].parameters():
-                    p.requires_grad = False
+            # for localid in selectN:
+            #     for p in self.netDS[localid].parameters():
+            #         p.requires_grad = False
             ###############################################
             for localid in selectN:
                 d_out_fake = self.netDS[localid](syn_img) 
@@ -874,6 +875,14 @@ class ProgressMeter(object):
 class MultiTeacher(OneTeacher):
 
     def gen_dataset(self, args):
+         # 直接从dataset中获取val_dataset
+        num_classes, ori_training_dataset, val_dataset = registry.get_dataset(name=args.dataset,
+                                                                              data_root=args.DATAPATH)
+        val_loader = torch.utils.data.DataLoader(
+            val_dataset,
+            shuffle=False,
+            batch_size=self.args.batch_size,
+            num_workers=self.args.workers)
         # 通过dirichlet分布分割数据，为每个local提供由num_classes类别组成的数量不一的数据
         # priv_train_data: 被分为N_PARTIES份数据，每份数据有num_classes, 服从dirichlet分布
         priv_train_data, ori_training_dataset, test_dataset = cifar.dirichlet_datasplit(
@@ -890,14 +899,7 @@ class MultiTeacher(OneTeacher):
                                                  verbose=False)
 
             local_dataset.append(tr_dataset)
-        # 直接从dataset中获取val_dataset
-        num_classes, ori_training_dataset, val_dataset = registry.get_dataset(name=args.dataset,
-                                                                              data_root=args.DATAPATH)
-        val_loader = torch.utils.data.DataLoader(
-            val_dataset,
-            shuffle=False,
-            batch_size=self.args.batch_size,
-            num_workers=self.args.workers)
+       
 
         local_datanum = np.zeros(self.args.N_PARTIES)
         local_cls_datanum = np.zeros((self.args.N_PARTIES, self.args.n_classes))

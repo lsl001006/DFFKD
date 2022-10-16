@@ -143,3 +143,619 @@
 [10/04 22:15:57] cifar10-resnet8_t-resnet18 INFO: save_img: False
 [10/04 22:15:57] cifar10-resnet8_t-resnet18 INFO: logger: <Logger cifar10-resnet8_t-resnet18 (DEBUG)>
 [10/04 22:15:57] cifar10-resnet8_t-resnet18 INFO: tb: <torch.utils.tensorboard.writer.SummaryWriter object at 0x7fd71bb8af40>
+[10/05 04:16:06] cifar10-resnet8_t-resnet18 INFO: DATAPATH: data/fed
+[10/05 04:16:06] cifar10-resnet8_t-resnet18 INFO: ckpt_path: /data_local/xg/resnet18/pure_b64lr9e
+[10/05 04:16:06] cifar10-resnet8_t-resnet18 INFO: gen_ckpt_path: ./ckpt
+[10/05 04:16:06] cifar10-resnet8_t-resnet18 INFO: teacher: resnet8_t
+[10/05 04:16:06] cifar10-resnet8_t-resnet18 INFO: student: resnet18
+[10/05 04:16:06] cifar10-resnet8_t-resnet18 INFO: pipeline: multi_teacher
+[10/05 04:16:06] cifar10-resnet8_t-resnet18 INFO: n_classes: 10
+[10/05 04:16:06] cifar10-resnet8_t-resnet18 INFO: N_PARTIES: 20
+[10/05 04:16:06] cifar10-resnet8_t-resnet18 INFO: local_percent: 1.0
+[10/05 04:16:06] cifar10-resnet8_t-resnet18 INFO: dataset: cifar10
+[10/05 04:16:06] cifar10-resnet8_t-resnet18 INFO: unlabeled: cifar10
+[10/05 04:16:06] cifar10-resnet8_t-resnet18 INFO: log_tag: 
+[10/05 04:16:06] cifar10-resnet8_t-resnet18 INFO: logfile: 10050416pure_b64lr9e-3_500e
+[10/05 04:16:06] cifar10-resnet8_t-resnet18 INFO: workers: 4
+[10/05 04:16:06] cifar10-resnet8_t-resnet18 INFO: epochs: 500
+[10/05 04:16:06] cifar10-resnet8_t-resnet18 INFO: start_epoch: 0
+[10/05 04:16:06] cifar10-resnet8_t-resnet18 INFO: seed: 1
+[10/05 04:16:06] cifar10-resnet8_t-resnet18 INFO: gpu: 0
+[10/05 04:16:06] cifar10-resnet8_t-resnet18 INFO: resume: 
+[10/05 04:16:06] cifar10-resnet8_t-resnet18 INFO: fp16: True
+[10/05 04:16:06] cifar10-resnet8_t-resnet18 INFO: batch_size: 64
+[10/05 04:16:06] cifar10-resnet8_t-resnet18 INFO: from_teacher_ckpt: 
+[10/05 04:16:06] cifar10-resnet8_t-resnet18 INFO: use_pretrained_generator: 
+[10/05 04:16:06] cifar10-resnet8_t-resnet18 INFO: use_maxIters: True
+[10/05 04:16:06] cifar10-resnet8_t-resnet18 INFO: use_pate: False
+[10/05 04:16:06] cifar10-resnet8_t-resnet18 INFO: num_moments: 100
+[10/05 04:16:06] cifar10-resnet8_t-resnet18 INFO: target_delta: 1e-05
+[10/05 04:16:06] cifar10-resnet8_t-resnet18 INFO: lap_scale: 0.0001
+[10/05 04:16:06] cifar10-resnet8_t-resnet18 INFO: onehot_vote: False
+[10/05 04:16:06] cifar10-resnet8_t-resnet18 INFO: add_noise: False
+[10/05 04:16:06] cifar10-resnet8_t-resnet18 INFO: local_weight: False
+[10/05 04:16:06] cifar10-resnet8_t-resnet18 INFO: local_cls_weight: False
+[10/05 04:16:06] cifar10-resnet8_t-resnet18 INFO: max_vote: False
+[10/05 04:16:06] cifar10-resnet8_t-resnet18 INFO: clip: False
+[10/05 04:16:06] cifar10-resnet8_t-resnet18 INFO: noise_multiplier: 1.07
+[10/05 04:16:06] cifar10-resnet8_t-resnet18 INFO: lr: 0.009
+[10/05 04:16:06] cifar10-resnet8_t-resnet18 INFO: lr_min: 0.0001
+[10/05 04:16:06] cifar10-resnet8_t-resnet18 INFO: lr_g: 0.001
+[10/05 04:16:06] cifar10-resnet8_t-resnet18 INFO: optimizer: SGD
+[10/05 04:16:06] cifar10-resnet8_t-resnet18 INFO: momentum: 0.9
+[10/05 04:16:06] cifar10-resnet8_t-resnet18 INFO: weight_decay: 0.0001
+[10/05 04:16:06] cifar10-resnet8_t-resnet18 INFO: modify_optim_lr: False
+[10/05 04:16:06] cifar10-resnet8_t-resnet18 INFO: fixed_lr: False
+[10/05 04:16:06] cifar10-resnet8_t-resnet18 INFO: T: 10001.0
+[10/05 04:16:06] cifar10-resnet8_t-resnet18 INFO: alpha: 1.0
+[10/05 04:16:06] cifar10-resnet8_t-resnet18 INFO: ngf: 64
+[10/05 04:16:06] cifar10-resnet8_t-resnet18 INFO: z_dim: 100
+[10/05 04:16:06] cifar10-resnet8_t-resnet18 INFO: output_stride: 1
+[10/05 04:16:06] cifar10-resnet8_t-resnet18 INFO: w_disc: 1.0
+[10/05 04:16:06] cifar10-resnet8_t-resnet18 INFO: w_gan: 1.0
+[10/05 04:16:06] cifar10-resnet8_t-resnet18 INFO: w_adv: 1.0
+[10/05 04:16:06] cifar10-resnet8_t-resnet18 INFO: w_algn: 1.0
+[10/05 04:16:06] cifar10-resnet8_t-resnet18 INFO: w_baln: 10.0
+[10/05 04:16:06] cifar10-resnet8_t-resnet18 INFO: w_dist: 1.0
+[10/05 04:16:06] cifar10-resnet8_t-resnet18 INFO: rank: -1
+[10/05 04:16:06] cifar10-resnet8_t-resnet18 INFO: is_emsember_generator_GAN_loss: y
+[10/05 04:16:06] cifar10-resnet8_t-resnet18 INFO: multiprocessing_distributed: False
+[10/05 04:16:06] cifar10-resnet8_t-resnet18 INFO: gen_loss_avg: False
+[10/05 04:16:06] cifar10-resnet8_t-resnet18 INFO: save_img: False
+[10/05 04:16:06] cifar10-resnet8_t-resnet18 INFO: logger: <Logger cifar10-resnet8_t-resnet18 (DEBUG)>
+[10/05 04:16:06] cifar10-resnet8_t-resnet18 INFO: tb: <torch.utils.tensorboard.writer.SummaryWriter object at 0x7fda1d5bf940>
+[10/06 07:32:23] cifar10-resnet8_t-resnet18 INFO: DATAPATH: data/fed
+[10/06 07:32:23] cifar10-resnet8_t-resnet18 INFO: ckpt_path: /data_local/xg/resnet18/pure_b64lr9e-3_500e
+[10/06 07:32:23] cifar10-resnet8_t-resnet18 INFO: gen_ckpt_path: ./ckpt
+[10/06 07:32:23] cifar10-resnet8_t-resnet18 INFO: teacher: resnet8_t
+[10/06 07:32:23] cifar10-resnet8_t-resnet18 INFO: student: resnet18
+[10/06 07:32:23] cifar10-resnet8_t-resnet18 INFO: pipeline: multi_teacher
+[10/06 07:32:23] cifar10-resnet8_t-resnet18 INFO: n_classes: 10
+[10/06 07:32:23] cifar10-resnet8_t-resnet18 INFO: N_PARTIES: 20
+[10/06 07:32:23] cifar10-resnet8_t-resnet18 INFO: local_percent: 1.0
+[10/06 07:32:23] cifar10-resnet8_t-resnet18 INFO: dataset: cifar10
+[10/06 07:32:23] cifar10-resnet8_t-resnet18 INFO: unlabeled: cifar10
+[10/06 07:32:23] cifar10-resnet8_t-resnet18 INFO: log_tag: 
+[10/06 07:32:23] cifar10-resnet8_t-resnet18 INFO: logfile: 10060732pure_b64lr9e-3_500e
+[10/06 07:32:23] cifar10-resnet8_t-resnet18 INFO: workers: 4
+[10/06 07:32:23] cifar10-resnet8_t-resnet18 INFO: epochs: 500
+[10/06 07:32:23] cifar10-resnet8_t-resnet18 INFO: start_epoch: 0
+[10/06 07:32:23] cifar10-resnet8_t-resnet18 INFO: seed: 1
+[10/06 07:32:23] cifar10-resnet8_t-resnet18 INFO: gpu: 0
+[10/06 07:32:23] cifar10-resnet8_t-resnet18 INFO: resume: 
+[10/06 07:32:23] cifar10-resnet8_t-resnet18 INFO: fp16: True
+[10/06 07:32:23] cifar10-resnet8_t-resnet18 INFO: batch_size: 64
+[10/06 07:32:23] cifar10-resnet8_t-resnet18 INFO: from_teacher_ckpt: 
+[10/06 07:32:23] cifar10-resnet8_t-resnet18 INFO: use_pretrained_generator: 
+[10/06 07:32:23] cifar10-resnet8_t-resnet18 INFO: use_maxIters: True
+[10/06 07:32:23] cifar10-resnet8_t-resnet18 INFO: use_pate: False
+[10/06 07:32:23] cifar10-resnet8_t-resnet18 INFO: num_moments: 100
+[10/06 07:32:23] cifar10-resnet8_t-resnet18 INFO: target_delta: 1e-05
+[10/06 07:32:23] cifar10-resnet8_t-resnet18 INFO: lap_scale: 0.0001
+[10/06 07:32:23] cifar10-resnet8_t-resnet18 INFO: onehot_vote: False
+[10/06 07:32:23] cifar10-resnet8_t-resnet18 INFO: add_noise: False
+[10/06 07:32:23] cifar10-resnet8_t-resnet18 INFO: local_weight: False
+[10/06 07:32:23] cifar10-resnet8_t-resnet18 INFO: local_cls_weight: False
+[10/06 07:32:23] cifar10-resnet8_t-resnet18 INFO: max_vote: False
+[10/06 07:32:23] cifar10-resnet8_t-resnet18 INFO: clip: False
+[10/06 07:32:23] cifar10-resnet8_t-resnet18 INFO: noise_multiplier: 1.07
+[10/06 07:32:23] cifar10-resnet8_t-resnet18 INFO: lr: 0.009
+[10/06 07:32:23] cifar10-resnet8_t-resnet18 INFO: lr_min: 0.0001
+[10/06 07:32:23] cifar10-resnet8_t-resnet18 INFO: lr_g: 0.001
+[10/06 07:32:23] cifar10-resnet8_t-resnet18 INFO: optimizer: SGD
+[10/06 07:32:23] cifar10-resnet8_t-resnet18 INFO: momentum: 0.9
+[10/06 07:32:23] cifar10-resnet8_t-resnet18 INFO: weight_decay: 0.0001
+[10/06 07:32:23] cifar10-resnet8_t-resnet18 INFO: modify_optim_lr: False
+[10/06 07:32:23] cifar10-resnet8_t-resnet18 INFO: fixed_lr: False
+[10/06 07:32:23] cifar10-resnet8_t-resnet18 INFO: T: 10001.0
+[10/06 07:32:23] cifar10-resnet8_t-resnet18 INFO: alpha: 1.0
+[10/06 07:32:23] cifar10-resnet8_t-resnet18 INFO: ngf: 64
+[10/06 07:32:23] cifar10-resnet8_t-resnet18 INFO: z_dim: 100
+[10/06 07:32:23] cifar10-resnet8_t-resnet18 INFO: output_stride: 1
+[10/06 07:32:23] cifar10-resnet8_t-resnet18 INFO: w_disc: 1.0
+[10/06 07:32:23] cifar10-resnet8_t-resnet18 INFO: w_gan: 1.0
+[10/06 07:32:23] cifar10-resnet8_t-resnet18 INFO: w_adv: 1.0
+[10/06 07:32:23] cifar10-resnet8_t-resnet18 INFO: w_algn: 1.0
+[10/06 07:32:23] cifar10-resnet8_t-resnet18 INFO: w_baln: 10.0
+[10/06 07:32:23] cifar10-resnet8_t-resnet18 INFO: w_dist: 1.0
+[10/06 07:32:23] cifar10-resnet8_t-resnet18 INFO: rank: -1
+[10/06 07:32:23] cifar10-resnet8_t-resnet18 INFO: is_emsember_generator_GAN_loss: y
+[10/06 07:32:23] cifar10-resnet8_t-resnet18 INFO: multiprocessing_distributed: False
+[10/06 07:32:23] cifar10-resnet8_t-resnet18 INFO: gen_loss_avg: False
+[10/06 07:32:23] cifar10-resnet8_t-resnet18 INFO: save_img: False
+[10/06 07:32:23] cifar10-resnet8_t-resnet18 INFO: logger: <Logger cifar10-resnet8_t-resnet18 (DEBUG)>
+[10/06 07:32:23] cifar10-resnet8_t-resnet18 INFO: tb: <torch.utils.tensorboard.writer.SummaryWriter object at 0x7f08864356a0>
+[10/06 07:32:40] cifar10-resnet8_t-resnet18 INFO: DATAPATH: data/fed
+[10/06 07:32:40] cifar10-resnet8_t-resnet18 INFO: ckpt_path: /data_local/xg/resnet18/pure_b64lr9e-3_500e
+[10/06 07:32:40] cifar10-resnet8_t-resnet18 INFO: gen_ckpt_path: ./ckpt
+[10/06 07:32:40] cifar10-resnet8_t-resnet18 INFO: teacher: resnet8_t
+[10/06 07:32:40] cifar10-resnet8_t-resnet18 INFO: student: resnet18
+[10/06 07:32:40] cifar10-resnet8_t-resnet18 INFO: pipeline: multi_teacher
+[10/06 07:32:40] cifar10-resnet8_t-resnet18 INFO: n_classes: 10
+[10/06 07:32:40] cifar10-resnet8_t-resnet18 INFO: N_PARTIES: 20
+[10/06 07:32:40] cifar10-resnet8_t-resnet18 INFO: local_percent: 1.0
+[10/06 07:32:40] cifar10-resnet8_t-resnet18 INFO: dataset: cifar10
+[10/06 07:32:40] cifar10-resnet8_t-resnet18 INFO: unlabeled: cifar10
+[10/06 07:32:40] cifar10-resnet8_t-resnet18 INFO: log_tag: 
+[10/06 07:32:40] cifar10-resnet8_t-resnet18 INFO: logfile: 10060732pure_b64lr9e-3_500e
+[10/06 07:32:40] cifar10-resnet8_t-resnet18 INFO: workers: 4
+[10/06 07:32:40] cifar10-resnet8_t-resnet18 INFO: epochs: 500
+[10/06 07:32:40] cifar10-resnet8_t-resnet18 INFO: start_epoch: 0
+[10/06 07:32:40] cifar10-resnet8_t-resnet18 INFO: seed: 1
+[10/06 07:32:40] cifar10-resnet8_t-resnet18 INFO: gpu: 0
+[10/06 07:32:40] cifar10-resnet8_t-resnet18 INFO: resume: 
+[10/06 07:32:40] cifar10-resnet8_t-resnet18 INFO: fp16: True
+[10/06 07:32:40] cifar10-resnet8_t-resnet18 INFO: batch_size: 64
+[10/06 07:32:40] cifar10-resnet8_t-resnet18 INFO: from_teacher_ckpt: /home/csgrad/xuangong/code/DFFKD/mosaic_core/checkpoints/a1.0+sd1+e500+b16
+[10/06 07:32:40] cifar10-resnet8_t-resnet18 INFO: use_pretrained_generator: 
+[10/06 07:32:40] cifar10-resnet8_t-resnet18 INFO: use_maxIters: True
+[10/06 07:32:40] cifar10-resnet8_t-resnet18 INFO: use_pate: False
+[10/06 07:32:40] cifar10-resnet8_t-resnet18 INFO: num_moments: 100
+[10/06 07:32:40] cifar10-resnet8_t-resnet18 INFO: target_delta: 1e-05
+[10/06 07:32:40] cifar10-resnet8_t-resnet18 INFO: lap_scale: 0.0001
+[10/06 07:32:40] cifar10-resnet8_t-resnet18 INFO: onehot_vote: False
+[10/06 07:32:40] cifar10-resnet8_t-resnet18 INFO: add_noise: False
+[10/06 07:32:40] cifar10-resnet8_t-resnet18 INFO: local_weight: False
+[10/06 07:32:40] cifar10-resnet8_t-resnet18 INFO: local_cls_weight: False
+[10/06 07:32:40] cifar10-resnet8_t-resnet18 INFO: max_vote: False
+[10/06 07:32:40] cifar10-resnet8_t-resnet18 INFO: clip: False
+[10/06 07:32:40] cifar10-resnet8_t-resnet18 INFO: noise_multiplier: 1.07
+[10/06 07:32:40] cifar10-resnet8_t-resnet18 INFO: lr: 0.009
+[10/06 07:32:40] cifar10-resnet8_t-resnet18 INFO: lr_min: 0.0001
+[10/06 07:32:40] cifar10-resnet8_t-resnet18 INFO: lr_g: 0.001
+[10/06 07:32:40] cifar10-resnet8_t-resnet18 INFO: optimizer: SGD
+[10/06 07:32:40] cifar10-resnet8_t-resnet18 INFO: momentum: 0.9
+[10/06 07:32:40] cifar10-resnet8_t-resnet18 INFO: weight_decay: 0.0001
+[10/06 07:32:40] cifar10-resnet8_t-resnet18 INFO: modify_optim_lr: False
+[10/06 07:32:40] cifar10-resnet8_t-resnet18 INFO: fixed_lr: False
+[10/06 07:32:40] cifar10-resnet8_t-resnet18 INFO: T: 10001.0
+[10/06 07:32:40] cifar10-resnet8_t-resnet18 INFO: alpha: 1.0
+[10/06 07:32:40] cifar10-resnet8_t-resnet18 INFO: ngf: 64
+[10/06 07:32:40] cifar10-resnet8_t-resnet18 INFO: z_dim: 100
+[10/06 07:32:40] cifar10-resnet8_t-resnet18 INFO: output_stride: 1
+[10/06 07:32:40] cifar10-resnet8_t-resnet18 INFO: w_disc: 1.0
+[10/06 07:32:40] cifar10-resnet8_t-resnet18 INFO: w_gan: 1.0
+[10/06 07:32:40] cifar10-resnet8_t-resnet18 INFO: w_adv: 1.0
+[10/06 07:32:40] cifar10-resnet8_t-resnet18 INFO: w_algn: 1.0
+[10/06 07:32:40] cifar10-resnet8_t-resnet18 INFO: w_baln: 10.0
+[10/06 07:32:40] cifar10-resnet8_t-resnet18 INFO: w_dist: 1.0
+[10/06 07:32:40] cifar10-resnet8_t-resnet18 INFO: rank: -1
+[10/06 07:32:40] cifar10-resnet8_t-resnet18 INFO: is_emsember_generator_GAN_loss: y
+[10/06 07:32:40] cifar10-resnet8_t-resnet18 INFO: multiprocessing_distributed: False
+[10/06 07:32:40] cifar10-resnet8_t-resnet18 INFO: gen_loss_avg: False
+[10/06 07:32:40] cifar10-resnet8_t-resnet18 INFO: save_img: False
+[10/06 07:32:40] cifar10-resnet8_t-resnet18 INFO: logger: <Logger cifar10-resnet8_t-resnet18 (DEBUG)>
+[10/06 07:32:40] cifar10-resnet8_t-resnet18 INFO: tb: <torch.utils.tensorboard.writer.SummaryWriter object at 0x7f3733fe86d0>
+[10/06 07:35:28] cifar10-resnet8_t-resnet18 INFO: DATAPATH: data/fed
+[10/06 07:35:28] cifar10-resnet8_t-resnet18 INFO: ckpt_path: /data_local/xg/resnet18/pure_b64lr9e-3_500e
+[10/06 07:35:28] cifar10-resnet8_t-resnet18 INFO: gen_ckpt_path: ./ckpt
+[10/06 07:35:28] cifar10-resnet8_t-resnet18 INFO: teacher: resnet8_t
+[10/06 07:35:28] cifar10-resnet8_t-resnet18 INFO: student: resnet18
+[10/06 07:35:28] cifar10-resnet8_t-resnet18 INFO: pipeline: multi_teacher
+[10/06 07:35:28] cifar10-resnet8_t-resnet18 INFO: n_classes: 10
+[10/06 07:35:28] cifar10-resnet8_t-resnet18 INFO: N_PARTIES: 20
+[10/06 07:35:28] cifar10-resnet8_t-resnet18 INFO: local_percent: 1.0
+[10/06 07:35:28] cifar10-resnet8_t-resnet18 INFO: dataset: cifar10
+[10/06 07:35:28] cifar10-resnet8_t-resnet18 INFO: unlabeled: cifar10
+[10/06 07:35:28] cifar10-resnet8_t-resnet18 INFO: log_tag: 
+[10/06 07:35:28] cifar10-resnet8_t-resnet18 INFO: logfile: 10060735pure_b64lr9e-3_500e
+[10/06 07:35:28] cifar10-resnet8_t-resnet18 INFO: workers: 4
+[10/06 07:35:28] cifar10-resnet8_t-resnet18 INFO: epochs: 500
+[10/06 07:35:28] cifar10-resnet8_t-resnet18 INFO: start_epoch: 0
+[10/06 07:35:28] cifar10-resnet8_t-resnet18 INFO: seed: 1
+[10/06 07:35:28] cifar10-resnet8_t-resnet18 INFO: gpu: 0
+[10/06 07:35:28] cifar10-resnet8_t-resnet18 INFO: resume: 
+[10/06 07:35:28] cifar10-resnet8_t-resnet18 INFO: fp16: True
+[10/06 07:35:28] cifar10-resnet8_t-resnet18 INFO: batch_size: 64
+[10/06 07:35:28] cifar10-resnet8_t-resnet18 INFO: from_teacher_ckpt: /home/csgrad/xuangong/code/DFFKD/mosaic_core/checkpoints/a1.0+sd1+e500+b16
+[10/06 07:35:28] cifar10-resnet8_t-resnet18 INFO: use_pretrained_generator: 
+[10/06 07:35:28] cifar10-resnet8_t-resnet18 INFO: use_maxIters: True
+[10/06 07:35:28] cifar10-resnet8_t-resnet18 INFO: use_pate: False
+[10/06 07:35:28] cifar10-resnet8_t-resnet18 INFO: num_moments: 100
+[10/06 07:35:28] cifar10-resnet8_t-resnet18 INFO: target_delta: 1e-05
+[10/06 07:35:28] cifar10-resnet8_t-resnet18 INFO: lap_scale: 0.0001
+[10/06 07:35:28] cifar10-resnet8_t-resnet18 INFO: onehot_vote: False
+[10/06 07:35:28] cifar10-resnet8_t-resnet18 INFO: add_noise: False
+[10/06 07:35:28] cifar10-resnet8_t-resnet18 INFO: local_weight: False
+[10/06 07:35:28] cifar10-resnet8_t-resnet18 INFO: local_cls_weight: False
+[10/06 07:35:28] cifar10-resnet8_t-resnet18 INFO: max_vote: False
+[10/06 07:35:28] cifar10-resnet8_t-resnet18 INFO: clip: False
+[10/06 07:35:28] cifar10-resnet8_t-resnet18 INFO: noise_multiplier: 1.07
+[10/06 07:35:28] cifar10-resnet8_t-resnet18 INFO: lr: 0.009
+[10/06 07:35:28] cifar10-resnet8_t-resnet18 INFO: lr_min: 0.0001
+[10/06 07:35:28] cifar10-resnet8_t-resnet18 INFO: lr_g: 0.001
+[10/06 07:35:28] cifar10-resnet8_t-resnet18 INFO: optimizer: SGD
+[10/06 07:35:28] cifar10-resnet8_t-resnet18 INFO: momentum: 0.9
+[10/06 07:35:28] cifar10-resnet8_t-resnet18 INFO: weight_decay: 0.0001
+[10/06 07:35:28] cifar10-resnet8_t-resnet18 INFO: modify_optim_lr: False
+[10/06 07:35:28] cifar10-resnet8_t-resnet18 INFO: fixed_lr: False
+[10/06 07:35:28] cifar10-resnet8_t-resnet18 INFO: T: 10001.0
+[10/06 07:35:28] cifar10-resnet8_t-resnet18 INFO: alpha: 1.0
+[10/06 07:35:28] cifar10-resnet8_t-resnet18 INFO: ngf: 64
+[10/06 07:35:28] cifar10-resnet8_t-resnet18 INFO: z_dim: 100
+[10/06 07:35:28] cifar10-resnet8_t-resnet18 INFO: output_stride: 1
+[10/06 07:35:28] cifar10-resnet8_t-resnet18 INFO: w_disc: 1.0
+[10/06 07:35:28] cifar10-resnet8_t-resnet18 INFO: w_gan: 1.0
+[10/06 07:35:28] cifar10-resnet8_t-resnet18 INFO: w_adv: 1.0
+[10/06 07:35:28] cifar10-resnet8_t-resnet18 INFO: w_algn: 1.0
+[10/06 07:35:28] cifar10-resnet8_t-resnet18 INFO: w_baln: 10.0
+[10/06 07:35:28] cifar10-resnet8_t-resnet18 INFO: w_dist: 1.0
+[10/06 07:35:28] cifar10-resnet8_t-resnet18 INFO: rank: -1
+[10/06 07:35:28] cifar10-resnet8_t-resnet18 INFO: is_emsember_generator_GAN_loss: y
+[10/06 07:35:28] cifar10-resnet8_t-resnet18 INFO: multiprocessing_distributed: False
+[10/06 07:35:28] cifar10-resnet8_t-resnet18 INFO: gen_loss_avg: False
+[10/06 07:35:28] cifar10-resnet8_t-resnet18 INFO: save_img: False
+[10/06 07:35:28] cifar10-resnet8_t-resnet18 INFO: logger: <Logger cifar10-resnet8_t-resnet18 (DEBUG)>
+[10/06 07:35:28] cifar10-resnet8_t-resnet18 INFO: tb: <torch.utils.tensorboard.writer.SummaryWriter object at 0x7fdb285816d0>
+[10/06 07:39:15] cifar10-resnet8_t-resnet18 INFO: DATAPATH: data/fed
+[10/06 07:39:15] cifar10-resnet8_t-resnet18 INFO: ckpt_path: /data_local/xg/resnet18/pure_b64lr9e-3_500e
+[10/06 07:39:15] cifar10-resnet8_t-resnet18 INFO: gen_ckpt_path: ./ckpt
+[10/06 07:39:15] cifar10-resnet8_t-resnet18 INFO: teacher: resnet8_t
+[10/06 07:39:15] cifar10-resnet8_t-resnet18 INFO: student: resnet18
+[10/06 07:39:15] cifar10-resnet8_t-resnet18 INFO: pipeline: multi_teacher
+[10/06 07:39:15] cifar10-resnet8_t-resnet18 INFO: n_classes: 10
+[10/06 07:39:15] cifar10-resnet8_t-resnet18 INFO: N_PARTIES: 20
+[10/06 07:39:15] cifar10-resnet8_t-resnet18 INFO: local_percent: 1.0
+[10/06 07:39:15] cifar10-resnet8_t-resnet18 INFO: dataset: cifar10
+[10/06 07:39:15] cifar10-resnet8_t-resnet18 INFO: unlabeled: cifar10
+[10/06 07:39:15] cifar10-resnet8_t-resnet18 INFO: log_tag: 
+[10/06 07:39:15] cifar10-resnet8_t-resnet18 INFO: logfile: 10060739pure_b64lr9e-3_500e
+[10/06 07:39:15] cifar10-resnet8_t-resnet18 INFO: workers: 4
+[10/06 07:39:15] cifar10-resnet8_t-resnet18 INFO: epochs: 500
+[10/06 07:39:15] cifar10-resnet8_t-resnet18 INFO: start_epoch: 0
+[10/06 07:39:15] cifar10-resnet8_t-resnet18 INFO: seed: 1
+[10/06 07:39:15] cifar10-resnet8_t-resnet18 INFO: gpu: 0
+[10/06 07:39:15] cifar10-resnet8_t-resnet18 INFO: resume: 
+[10/06 07:39:15] cifar10-resnet8_t-resnet18 INFO: fp16: True
+[10/06 07:39:15] cifar10-resnet8_t-resnet18 INFO: batch_size: 64
+[10/06 07:39:15] cifar10-resnet8_t-resnet18 INFO: from_teacher_ckpt: /home/csgrad/xuangong/code/DFFKD/mosaic_core/checkpoints/a1.0+sd1+e500+b16
+[10/06 07:39:15] cifar10-resnet8_t-resnet18 INFO: use_pretrained_generator: 
+[10/06 07:39:15] cifar10-resnet8_t-resnet18 INFO: use_maxIters: True
+[10/06 07:39:15] cifar10-resnet8_t-resnet18 INFO: use_pate: False
+[10/06 07:39:15] cifar10-resnet8_t-resnet18 INFO: num_moments: 100
+[10/06 07:39:15] cifar10-resnet8_t-resnet18 INFO: target_delta: 1e-05
+[10/06 07:39:15] cifar10-resnet8_t-resnet18 INFO: lap_scale: 0.0001
+[10/06 07:39:15] cifar10-resnet8_t-resnet18 INFO: onehot_vote: False
+[10/06 07:39:15] cifar10-resnet8_t-resnet18 INFO: add_noise: False
+[10/06 07:39:15] cifar10-resnet8_t-resnet18 INFO: local_weight: False
+[10/06 07:39:15] cifar10-resnet8_t-resnet18 INFO: local_cls_weight: False
+[10/06 07:39:15] cifar10-resnet8_t-resnet18 INFO: max_vote: False
+[10/06 07:39:15] cifar10-resnet8_t-resnet18 INFO: clip: False
+[10/06 07:39:15] cifar10-resnet8_t-resnet18 INFO: noise_multiplier: 1.07
+[10/06 07:39:15] cifar10-resnet8_t-resnet18 INFO: lr: 0.009
+[10/06 07:39:15] cifar10-resnet8_t-resnet18 INFO: lr_min: 0.0001
+[10/06 07:39:15] cifar10-resnet8_t-resnet18 INFO: lr_g: 0.001
+[10/06 07:39:15] cifar10-resnet8_t-resnet18 INFO: optimizer: SGD
+[10/06 07:39:15] cifar10-resnet8_t-resnet18 INFO: momentum: 0.9
+[10/06 07:39:15] cifar10-resnet8_t-resnet18 INFO: weight_decay: 0.0001
+[10/06 07:39:15] cifar10-resnet8_t-resnet18 INFO: modify_optim_lr: False
+[10/06 07:39:15] cifar10-resnet8_t-resnet18 INFO: fixed_lr: False
+[10/06 07:39:15] cifar10-resnet8_t-resnet18 INFO: T: 10001.0
+[10/06 07:39:15] cifar10-resnet8_t-resnet18 INFO: alpha: 1.0
+[10/06 07:39:15] cifar10-resnet8_t-resnet18 INFO: ngf: 64
+[10/06 07:39:15] cifar10-resnet8_t-resnet18 INFO: z_dim: 100
+[10/06 07:39:15] cifar10-resnet8_t-resnet18 INFO: output_stride: 1
+[10/06 07:39:15] cifar10-resnet8_t-resnet18 INFO: w_disc: 1.0
+[10/06 07:39:15] cifar10-resnet8_t-resnet18 INFO: w_gan: 1.0
+[10/06 07:39:15] cifar10-resnet8_t-resnet18 INFO: w_adv: 1.0
+[10/06 07:39:15] cifar10-resnet8_t-resnet18 INFO: w_algn: 1.0
+[10/06 07:39:15] cifar10-resnet8_t-resnet18 INFO: w_baln: 10.0
+[10/06 07:39:15] cifar10-resnet8_t-resnet18 INFO: w_dist: 1.0
+[10/06 07:39:15] cifar10-resnet8_t-resnet18 INFO: rank: -1
+[10/06 07:39:15] cifar10-resnet8_t-resnet18 INFO: is_emsember_generator_GAN_loss: y
+[10/06 07:39:15] cifar10-resnet8_t-resnet18 INFO: multiprocessing_distributed: False
+[10/06 07:39:15] cifar10-resnet8_t-resnet18 INFO: gen_loss_avg: False
+[10/06 07:39:15] cifar10-resnet8_t-resnet18 INFO: save_img: False
+[10/06 07:39:15] cifar10-resnet8_t-resnet18 INFO: logger: <Logger cifar10-resnet8_t-resnet18 (DEBUG)>
+[10/06 07:39:15] cifar10-resnet8_t-resnet18 INFO: tb: <torch.utils.tensorboard.writer.SummaryWriter object at 0x7f7083a09760>
+[10/06 07:53:22] cifar10-resnet8_t-resnet18 INFO: DATAPATH: data/fed
+[10/06 07:53:22] cifar10-resnet8_t-resnet18 INFO: ckpt_path: /data_local/xg/resnet18/pure_b64lr9e-3_500e
+[10/06 07:53:22] cifar10-resnet8_t-resnet18 INFO: gen_ckpt_path: ./ckpt
+[10/06 07:53:22] cifar10-resnet8_t-resnet18 INFO: teacher: resnet8_t
+[10/06 07:53:22] cifar10-resnet8_t-resnet18 INFO: student: resnet18
+[10/06 07:53:22] cifar10-resnet8_t-resnet18 INFO: pipeline: multi_teacher
+[10/06 07:53:22] cifar10-resnet8_t-resnet18 INFO: n_classes: 10
+[10/06 07:53:22] cifar10-resnet8_t-resnet18 INFO: N_PARTIES: 20
+[10/06 07:53:22] cifar10-resnet8_t-resnet18 INFO: local_percent: 1.0
+[10/06 07:53:22] cifar10-resnet8_t-resnet18 INFO: dataset: cifar10
+[10/06 07:53:22] cifar10-resnet8_t-resnet18 INFO: unlabeled: cifar10
+[10/06 07:53:22] cifar10-resnet8_t-resnet18 INFO: log_tag: 
+[10/06 07:53:22] cifar10-resnet8_t-resnet18 INFO: logfile: 10060753pure_b64lr9e-3_500e
+[10/06 07:53:22] cifar10-resnet8_t-resnet18 INFO: workers: 4
+[10/06 07:53:22] cifar10-resnet8_t-resnet18 INFO: epochs: 500
+[10/06 07:53:22] cifar10-resnet8_t-resnet18 INFO: start_epoch: 0
+[10/06 07:53:22] cifar10-resnet8_t-resnet18 INFO: seed: 1
+[10/06 07:53:22] cifar10-resnet8_t-resnet18 INFO: gpu: 0
+[10/06 07:53:22] cifar10-resnet8_t-resnet18 INFO: resume: 
+[10/06 07:53:22] cifar10-resnet8_t-resnet18 INFO: fp16: True
+[10/06 07:53:22] cifar10-resnet8_t-resnet18 INFO: batch_size: 64
+[10/06 07:53:22] cifar10-resnet8_t-resnet18 INFO: from_teacher_ckpt: /home/csgrad/xuangong/code/DFFKD/mosaic_core/checkpoints/a1.0+sd1+e500+b16
+[10/06 07:53:22] cifar10-resnet8_t-resnet18 INFO: use_pretrained_generator: 
+[10/06 07:53:22] cifar10-resnet8_t-resnet18 INFO: use_maxIters: True
+[10/06 07:53:22] cifar10-resnet8_t-resnet18 INFO: use_pate: False
+[10/06 07:53:22] cifar10-resnet8_t-resnet18 INFO: num_moments: 100
+[10/06 07:53:22] cifar10-resnet8_t-resnet18 INFO: target_delta: 1e-05
+[10/06 07:53:22] cifar10-resnet8_t-resnet18 INFO: lap_scale: 0.0001
+[10/06 07:53:22] cifar10-resnet8_t-resnet18 INFO: onehot_vote: False
+[10/06 07:53:22] cifar10-resnet8_t-resnet18 INFO: add_noise: False
+[10/06 07:53:22] cifar10-resnet8_t-resnet18 INFO: local_weight: False
+[10/06 07:53:22] cifar10-resnet8_t-resnet18 INFO: local_cls_weight: False
+[10/06 07:53:22] cifar10-resnet8_t-resnet18 INFO: max_vote: False
+[10/06 07:53:22] cifar10-resnet8_t-resnet18 INFO: clip: False
+[10/06 07:53:22] cifar10-resnet8_t-resnet18 INFO: noise_multiplier: 1.07
+[10/06 07:53:22] cifar10-resnet8_t-resnet18 INFO: lr: 0.009
+[10/06 07:53:22] cifar10-resnet8_t-resnet18 INFO: lr_min: 0.0001
+[10/06 07:53:22] cifar10-resnet8_t-resnet18 INFO: lr_g: 0.001
+[10/06 07:53:22] cifar10-resnet8_t-resnet18 INFO: optimizer: SGD
+[10/06 07:53:22] cifar10-resnet8_t-resnet18 INFO: momentum: 0.9
+[10/06 07:53:22] cifar10-resnet8_t-resnet18 INFO: weight_decay: 0.0001
+[10/06 07:53:22] cifar10-resnet8_t-resnet18 INFO: modify_optim_lr: False
+[10/06 07:53:22] cifar10-resnet8_t-resnet18 INFO: fixed_lr: False
+[10/06 07:53:22] cifar10-resnet8_t-resnet18 INFO: T: 10001.0
+[10/06 07:53:22] cifar10-resnet8_t-resnet18 INFO: alpha: 1.0
+[10/06 07:53:22] cifar10-resnet8_t-resnet18 INFO: ngf: 64
+[10/06 07:53:22] cifar10-resnet8_t-resnet18 INFO: z_dim: 100
+[10/06 07:53:22] cifar10-resnet8_t-resnet18 INFO: output_stride: 1
+[10/06 07:53:22] cifar10-resnet8_t-resnet18 INFO: w_disc: 1.0
+[10/06 07:53:22] cifar10-resnet8_t-resnet18 INFO: w_gan: 1.0
+[10/06 07:53:22] cifar10-resnet8_t-resnet18 INFO: w_adv: 1.0
+[10/06 07:53:22] cifar10-resnet8_t-resnet18 INFO: w_algn: 1.0
+[10/06 07:53:22] cifar10-resnet8_t-resnet18 INFO: w_baln: 10.0
+[10/06 07:53:22] cifar10-resnet8_t-resnet18 INFO: w_dist: 1.0
+[10/06 07:53:22] cifar10-resnet8_t-resnet18 INFO: rank: -1
+[10/06 07:53:22] cifar10-resnet8_t-resnet18 INFO: is_emsember_generator_GAN_loss: y
+[10/06 07:53:22] cifar10-resnet8_t-resnet18 INFO: multiprocessing_distributed: False
+[10/06 07:53:22] cifar10-resnet8_t-resnet18 INFO: gen_loss_avg: False
+[10/06 07:53:22] cifar10-resnet8_t-resnet18 INFO: save_img: False
+[10/06 07:53:22] cifar10-resnet8_t-resnet18 INFO: logger: <Logger cifar10-resnet8_t-resnet18 (DEBUG)>
+[10/06 07:53:22] cifar10-resnet8_t-resnet18 INFO: tb: <torch.utils.tensorboard.writer.SummaryWriter object at 0x7f7c06ea5a60>
+[10/06 07:54:43] cifar10-resnet8_t-resnet18 INFO:  [Eval] Epoch=0 Acc@1=21.4800 Acc@5=72.9500 Loss=6.9379 Lr=0.00900
+[10/06 07:56:48] cifar10-resnet8_t-resnet18 INFO: DATAPATH: data/fed
+[10/06 07:56:48] cifar10-resnet8_t-resnet18 INFO: ckpt_path: /data_local/xg/resnet18/pure_b64lr9e-3_500e_fp32
+[10/06 07:56:48] cifar10-resnet8_t-resnet18 INFO: gen_ckpt_path: ./ckpt
+[10/06 07:56:48] cifar10-resnet8_t-resnet18 INFO: teacher: resnet8_t
+[10/06 07:56:48] cifar10-resnet8_t-resnet18 INFO: student: resnet18
+[10/06 07:56:48] cifar10-resnet8_t-resnet18 INFO: pipeline: multi_teacher
+[10/06 07:56:48] cifar10-resnet8_t-resnet18 INFO: n_classes: 10
+[10/06 07:56:48] cifar10-resnet8_t-resnet18 INFO: N_PARTIES: 20
+[10/06 07:56:48] cifar10-resnet8_t-resnet18 INFO: local_percent: 1.0
+[10/06 07:56:48] cifar10-resnet8_t-resnet18 INFO: dataset: cifar10
+[10/06 07:56:48] cifar10-resnet8_t-resnet18 INFO: unlabeled: cifar10
+[10/06 07:56:48] cifar10-resnet8_t-resnet18 INFO: log_tag: 
+[10/06 07:56:48] cifar10-resnet8_t-resnet18 INFO: logfile: 10060756pure_b64lr9e-3_500e_fp32
+[10/06 07:56:48] cifar10-resnet8_t-resnet18 INFO: workers: 4
+[10/06 07:56:48] cifar10-resnet8_t-resnet18 INFO: epochs: 500
+[10/06 07:56:48] cifar10-resnet8_t-resnet18 INFO: start_epoch: 0
+[10/06 07:56:48] cifar10-resnet8_t-resnet18 INFO: seed: 1
+[10/06 07:56:48] cifar10-resnet8_t-resnet18 INFO: gpu: 0
+[10/06 07:56:48] cifar10-resnet8_t-resnet18 INFO: resume: 
+[10/06 07:56:48] cifar10-resnet8_t-resnet18 INFO: fp16: False
+[10/06 07:56:48] cifar10-resnet8_t-resnet18 INFO: batch_size: 64
+[10/06 07:56:48] cifar10-resnet8_t-resnet18 INFO: from_teacher_ckpt: /home/csgrad/xuangong/code/DFFKD/mosaic_core/checkpoints/a1.0+sd1+e500+b16
+[10/06 07:56:48] cifar10-resnet8_t-resnet18 INFO: use_pretrained_generator: 
+[10/06 07:56:48] cifar10-resnet8_t-resnet18 INFO: use_maxIters: True
+[10/06 07:56:48] cifar10-resnet8_t-resnet18 INFO: use_pate: False
+[10/06 07:56:48] cifar10-resnet8_t-resnet18 INFO: num_moments: 100
+[10/06 07:56:48] cifar10-resnet8_t-resnet18 INFO: target_delta: 1e-05
+[10/06 07:56:48] cifar10-resnet8_t-resnet18 INFO: lap_scale: 0.0001
+[10/06 07:56:48] cifar10-resnet8_t-resnet18 INFO: onehot_vote: False
+[10/06 07:56:48] cifar10-resnet8_t-resnet18 INFO: add_noise: False
+[10/06 07:56:48] cifar10-resnet8_t-resnet18 INFO: local_weight: False
+[10/06 07:56:48] cifar10-resnet8_t-resnet18 INFO: local_cls_weight: False
+[10/06 07:56:48] cifar10-resnet8_t-resnet18 INFO: max_vote: False
+[10/06 07:56:48] cifar10-resnet8_t-resnet18 INFO: clip: False
+[10/06 07:56:48] cifar10-resnet8_t-resnet18 INFO: noise_multiplier: 1.07
+[10/06 07:56:48] cifar10-resnet8_t-resnet18 INFO: lr: 0.009
+[10/06 07:56:48] cifar10-resnet8_t-resnet18 INFO: lr_min: 0.0001
+[10/06 07:56:48] cifar10-resnet8_t-resnet18 INFO: lr_g: 0.001
+[10/06 07:56:48] cifar10-resnet8_t-resnet18 INFO: optimizer: SGD
+[10/06 07:56:48] cifar10-resnet8_t-resnet18 INFO: momentum: 0.9
+[10/06 07:56:48] cifar10-resnet8_t-resnet18 INFO: weight_decay: 0.0001
+[10/06 07:56:48] cifar10-resnet8_t-resnet18 INFO: modify_optim_lr: False
+[10/06 07:56:48] cifar10-resnet8_t-resnet18 INFO: fixed_lr: False
+[10/06 07:56:48] cifar10-resnet8_t-resnet18 INFO: T: 10001.0
+[10/06 07:56:48] cifar10-resnet8_t-resnet18 INFO: alpha: 1.0
+[10/06 07:56:48] cifar10-resnet8_t-resnet18 INFO: ngf: 64
+[10/06 07:56:48] cifar10-resnet8_t-resnet18 INFO: z_dim: 100
+[10/06 07:56:48] cifar10-resnet8_t-resnet18 INFO: output_stride: 1
+[10/06 07:56:48] cifar10-resnet8_t-resnet18 INFO: w_disc: 1.0
+[10/06 07:56:48] cifar10-resnet8_t-resnet18 INFO: w_gan: 1.0
+[10/06 07:56:48] cifar10-resnet8_t-resnet18 INFO: w_adv: 1.0
+[10/06 07:56:48] cifar10-resnet8_t-resnet18 INFO: w_algn: 1.0
+[10/06 07:56:48] cifar10-resnet8_t-resnet18 INFO: w_baln: 10.0
+[10/06 07:56:48] cifar10-resnet8_t-resnet18 INFO: w_dist: 1.0
+[10/06 07:56:48] cifar10-resnet8_t-resnet18 INFO: rank: -1
+[10/06 07:56:48] cifar10-resnet8_t-resnet18 INFO: is_emsember_generator_GAN_loss: y
+[10/06 07:56:48] cifar10-resnet8_t-resnet18 INFO: multiprocessing_distributed: False
+[10/06 07:56:48] cifar10-resnet8_t-resnet18 INFO: gen_loss_avg: False
+[10/06 07:56:48] cifar10-resnet8_t-resnet18 INFO: save_img: False
+[10/06 07:56:48] cifar10-resnet8_t-resnet18 INFO: logger: <Logger cifar10-resnet8_t-resnet18 (DEBUG)>
+[10/06 07:56:48] cifar10-resnet8_t-resnet18 INFO: tb: <torch.utils.tensorboard.writer.SummaryWriter object at 0x7fa32e43fb80>
+[10/06 07:58:09] cifar10-resnet8_t-resnet18 INFO:  [Eval] Epoch=0 Acc@1=17.7600 Acc@5=71.9800 Loss=5.9238 Lr=0.00900
+[10/06 07:59:25] cifar10-resnet8_t-resnet18 INFO:  [Eval] Epoch=1 Acc@1=20.5600 Acc@5=76.3600 Loss=5.3310 Lr=0.00900
+[10/06 08:00:42] cifar10-resnet8_t-resnet18 INFO:  [Eval] Epoch=2 Acc@1=25.7500 Acc@5=80.6100 Loss=4.8249 Lr=0.00900
+[10/06 08:01:59] cifar10-resnet8_t-resnet18 INFO:  [Eval] Epoch=3 Acc@1=18.5100 Acc@5=78.4300 Loss=6.0649 Lr=0.00900
+[10/06 08:03:14] cifar10-resnet8_t-resnet18 INFO:  [Eval] Epoch=4 Acc@1=31.4200 Acc@5=90.1600 Loss=3.3712 Lr=0.00900
+[10/06 08:04:31] cifar10-resnet8_t-resnet18 INFO:  [Eval] Epoch=5 Acc@1=25.8200 Acc@5=84.2500 Loss=4.4007 Lr=0.00900
+[10/06 08:05:47] cifar10-resnet8_t-resnet18 INFO:  [Eval] Epoch=6 Acc@1=29.7800 Acc@5=87.1600 Loss=3.8191 Lr=0.00900
+[10/06 08:07:10] cifar10-resnet8_t-resnet18 INFO:  [Eval] Epoch=7 Acc@1=22.1200 Acc@5=91.0000 Loss=4.7920 Lr=0.00899
+[10/06 08:08:25] cifar10-resnet8_t-resnet18 INFO:  [Eval] Epoch=8 Acc@1=25.5100 Acc@5=88.4600 Loss=4.2905 Lr=0.00899
+[10/06 08:09:42] cifar10-resnet8_t-resnet18 INFO:  [Eval] Epoch=9 Acc@1=31.3300 Acc@5=88.8100 Loss=3.7160 Lr=0.00899
+[10/06 08:10:48] cifar10-resnet8_t-resnet18 INFO: DATAPATH: data/fed
+[10/06 08:10:48] cifar10-resnet8_t-resnet18 INFO: ckpt_path: /data_local/xg/resnet18/pure_b64lr9e-3_500e_fp32
+[10/06 08:10:48] cifar10-resnet8_t-resnet18 INFO: gen_ckpt_path: ./ckpt
+[10/06 08:10:48] cifar10-resnet8_t-resnet18 INFO: teacher: resnet8_t
+[10/06 08:10:48] cifar10-resnet8_t-resnet18 INFO: student: resnet18
+[10/06 08:10:48] cifar10-resnet8_t-resnet18 INFO: pipeline: multi_teacher
+[10/06 08:10:48] cifar10-resnet8_t-resnet18 INFO: n_classes: 10
+[10/06 08:10:48] cifar10-resnet8_t-resnet18 INFO: N_PARTIES: 20
+[10/06 08:10:48] cifar10-resnet8_t-resnet18 INFO: local_percent: 1.0
+[10/06 08:10:48] cifar10-resnet8_t-resnet18 INFO: dataset: cifar10
+[10/06 08:10:48] cifar10-resnet8_t-resnet18 INFO: unlabeled: cifar10
+[10/06 08:10:48] cifar10-resnet8_t-resnet18 INFO: log_tag: 
+[10/06 08:10:48] cifar10-resnet8_t-resnet18 INFO: logfile: 10060810pure_b64lr9e-3_500e_fp32
+[10/06 08:10:48] cifar10-resnet8_t-resnet18 INFO: workers: 4
+[10/06 08:10:48] cifar10-resnet8_t-resnet18 INFO: epochs: 500
+[10/06 08:10:48] cifar10-resnet8_t-resnet18 INFO: start_epoch: 0
+[10/06 08:10:48] cifar10-resnet8_t-resnet18 INFO: seed: 1
+[10/06 08:10:48] cifar10-resnet8_t-resnet18 INFO: gpu: 0
+[10/06 08:10:48] cifar10-resnet8_t-resnet18 INFO: resume: 
+[10/06 08:10:48] cifar10-resnet8_t-resnet18 INFO: fp16: False
+[10/06 08:10:48] cifar10-resnet8_t-resnet18 INFO: batch_size: 64
+[10/06 08:10:48] cifar10-resnet8_t-resnet18 INFO: from_teacher_ckpt: /home/csgrad/xuangong/code/DFFKD/mosaic_core/checkpoints/a1.0+sd1+e500+b16
+[10/06 08:10:48] cifar10-resnet8_t-resnet18 INFO: use_pretrained_generator: 
+[10/06 08:10:48] cifar10-resnet8_t-resnet18 INFO: use_maxIters: True
+[10/06 08:10:48] cifar10-resnet8_t-resnet18 INFO: use_pate: False
+[10/06 08:10:48] cifar10-resnet8_t-resnet18 INFO: num_moments: 100
+[10/06 08:10:48] cifar10-resnet8_t-resnet18 INFO: target_delta: 1e-05
+[10/06 08:10:48] cifar10-resnet8_t-resnet18 INFO: lap_scale: 0.0001
+[10/06 08:10:48] cifar10-resnet8_t-resnet18 INFO: onehot_vote: False
+[10/06 08:10:48] cifar10-resnet8_t-resnet18 INFO: add_noise: False
+[10/06 08:10:48] cifar10-resnet8_t-resnet18 INFO: local_weight: False
+[10/06 08:10:48] cifar10-resnet8_t-resnet18 INFO: local_cls_weight: False
+[10/06 08:10:48] cifar10-resnet8_t-resnet18 INFO: max_vote: False
+[10/06 08:10:48] cifar10-resnet8_t-resnet18 INFO: clip: False
+[10/06 08:10:48] cifar10-resnet8_t-resnet18 INFO: noise_multiplier: 1.07
+[10/06 08:10:48] cifar10-resnet8_t-resnet18 INFO: lr: 0.009
+[10/06 08:10:48] cifar10-resnet8_t-resnet18 INFO: lr_min: 0.0001
+[10/06 08:10:48] cifar10-resnet8_t-resnet18 INFO: lr_g: 0.001
+[10/06 08:10:48] cifar10-resnet8_t-resnet18 INFO: optimizer: SGD
+[10/06 08:10:48] cifar10-resnet8_t-resnet18 INFO: momentum: 0.9
+[10/06 08:10:48] cifar10-resnet8_t-resnet18 INFO: weight_decay: 0.0001
+[10/06 08:10:49] cifar10-resnet8_t-resnet18 INFO: modify_optim_lr: False
+[10/06 08:10:49] cifar10-resnet8_t-resnet18 INFO: fixed_lr: False
+[10/06 08:10:49] cifar10-resnet8_t-resnet18 INFO: T: 10001.0
+[10/06 08:10:49] cifar10-resnet8_t-resnet18 INFO: alpha: 1.0
+[10/06 08:10:49] cifar10-resnet8_t-resnet18 INFO: ngf: 64
+[10/06 08:10:49] cifar10-resnet8_t-resnet18 INFO: z_dim: 100
+[10/06 08:10:49] cifar10-resnet8_t-resnet18 INFO: output_stride: 1
+[10/06 08:10:49] cifar10-resnet8_t-resnet18 INFO: w_disc: 1.0
+[10/06 08:10:49] cifar10-resnet8_t-resnet18 INFO: w_gan: 1.0
+[10/06 08:10:49] cifar10-resnet8_t-resnet18 INFO: w_adv: 1.0
+[10/06 08:10:49] cifar10-resnet8_t-resnet18 INFO: w_algn: 1.0
+[10/06 08:10:49] cifar10-resnet8_t-resnet18 INFO: w_baln: 10.0
+[10/06 08:10:49] cifar10-resnet8_t-resnet18 INFO: w_dist: 1.0
+[10/06 08:10:49] cifar10-resnet8_t-resnet18 INFO: rank: -1
+[10/06 08:10:49] cifar10-resnet8_t-resnet18 INFO: is_emsember_generator_GAN_loss: y
+[10/06 08:10:49] cifar10-resnet8_t-resnet18 INFO: multiprocessing_distributed: False
+[10/06 08:10:49] cifar10-resnet8_t-resnet18 INFO: gen_loss_avg: False
+[10/06 08:10:49] cifar10-resnet8_t-resnet18 INFO: save_img: False
+[10/06 08:10:49] cifar10-resnet8_t-resnet18 INFO: logger: <Logger cifar10-resnet8_t-resnet18 (DEBUG)>
+[10/06 08:10:49] cifar10-resnet8_t-resnet18 INFO: tb: <torch.utils.tensorboard.writer.SummaryWriter object at 0x7fcf31cb0b20>
+[10/06 08:12:52] cifar10-resnet8_t-resnet18 INFO: DATAPATH: data/fed
+[10/06 08:12:52] cifar10-resnet8_t-resnet18 INFO: ckpt_path: /data_local/xg/resnet18/pure_b64lr9e-3_500e_fp32
+[10/06 08:12:52] cifar10-resnet8_t-resnet18 INFO: gen_ckpt_path: ./ckpt
+[10/06 08:12:52] cifar10-resnet8_t-resnet18 INFO: teacher: resnet8_t
+[10/06 08:12:52] cifar10-resnet8_t-resnet18 INFO: student: resnet18
+[10/06 08:12:52] cifar10-resnet8_t-resnet18 INFO: pipeline: multi_teacher
+[10/06 08:12:52] cifar10-resnet8_t-resnet18 INFO: n_classes: 10
+[10/06 08:12:52] cifar10-resnet8_t-resnet18 INFO: N_PARTIES: 20
+[10/06 08:12:52] cifar10-resnet8_t-resnet18 INFO: local_percent: 1.0
+[10/06 08:12:52] cifar10-resnet8_t-resnet18 INFO: dataset: cifar10
+[10/06 08:12:52] cifar10-resnet8_t-resnet18 INFO: unlabeled: cifar10
+[10/06 08:12:52] cifar10-resnet8_t-resnet18 INFO: log_tag: 
+[10/06 08:12:52] cifar10-resnet8_t-resnet18 INFO: logfile: 10060812pure_b64lr9e-3_500e_fp32
+[10/06 08:12:52] cifar10-resnet8_t-resnet18 INFO: workers: 4
+[10/06 08:12:52] cifar10-resnet8_t-resnet18 INFO: epochs: 500
+[10/06 08:12:52] cifar10-resnet8_t-resnet18 INFO: start_epoch: 0
+[10/06 08:12:52] cifar10-resnet8_t-resnet18 INFO: seed: 1
+[10/06 08:12:52] cifar10-resnet8_t-resnet18 INFO: gpu: 0
+[10/06 08:12:52] cifar10-resnet8_t-resnet18 INFO: resume: 
+[10/06 08:12:52] cifar10-resnet8_t-resnet18 INFO: fp16: False
+[10/06 08:12:52] cifar10-resnet8_t-resnet18 INFO: batch_size: 64
+[10/06 08:12:52] cifar10-resnet8_t-resnet18 INFO: from_teacher_ckpt: /home/csgrad/xuangong/code/DFFKD/mosaic_core/checkpoints/a1.0+sd1+e500+b16
+[10/06 08:12:52] cifar10-resnet8_t-resnet18 INFO: use_pretrained_generator: 
+[10/06 08:12:52] cifar10-resnet8_t-resnet18 INFO: use_maxIters: True
+[10/06 08:12:52] cifar10-resnet8_t-resnet18 INFO: use_pate: False
+[10/06 08:12:52] cifar10-resnet8_t-resnet18 INFO: num_moments: 100
+[10/06 08:12:52] cifar10-resnet8_t-resnet18 INFO: target_delta: 1e-05
+[10/06 08:12:52] cifar10-resnet8_t-resnet18 INFO: lap_scale: 0.0001
+[10/06 08:12:52] cifar10-resnet8_t-resnet18 INFO: onehot_vote: False
+[10/06 08:12:52] cifar10-resnet8_t-resnet18 INFO: add_noise: False
+[10/06 08:12:52] cifar10-resnet8_t-resnet18 INFO: local_weight: False
+[10/06 08:12:52] cifar10-resnet8_t-resnet18 INFO: local_cls_weight: False
+[10/06 08:12:52] cifar10-resnet8_t-resnet18 INFO: max_vote: False
+[10/06 08:12:52] cifar10-resnet8_t-resnet18 INFO: clip: False
+[10/06 08:12:52] cifar10-resnet8_t-resnet18 INFO: noise_multiplier: 1.07
+[10/06 08:12:52] cifar10-resnet8_t-resnet18 INFO: lr: 0.009
+[10/06 08:12:52] cifar10-resnet8_t-resnet18 INFO: lr_min: 0.0001
+[10/06 08:12:52] cifar10-resnet8_t-resnet18 INFO: lr_g: 0.001
+[10/06 08:12:52] cifar10-resnet8_t-resnet18 INFO: optimizer: SGD
+[10/06 08:12:52] cifar10-resnet8_t-resnet18 INFO: momentum: 0.9
+[10/06 08:12:52] cifar10-resnet8_t-resnet18 INFO: weight_decay: 0.0001
+[10/06 08:12:52] cifar10-resnet8_t-resnet18 INFO: modify_optim_lr: False
+[10/06 08:12:52] cifar10-resnet8_t-resnet18 INFO: fixed_lr: False
+[10/06 08:12:52] cifar10-resnet8_t-resnet18 INFO: T: 10001.0
+[10/06 08:12:52] cifar10-resnet8_t-resnet18 INFO: alpha: 1.0
+[10/06 08:12:52] cifar10-resnet8_t-resnet18 INFO: ngf: 64
+[10/06 08:12:52] cifar10-resnet8_t-resnet18 INFO: z_dim: 100
+[10/06 08:12:52] cifar10-resnet8_t-resnet18 INFO: output_stride: 1
+[10/06 08:12:52] cifar10-resnet8_t-resnet18 INFO: w_disc: 1.0
+[10/06 08:12:52] cifar10-resnet8_t-resnet18 INFO: w_gan: 1.0
+[10/06 08:12:52] cifar10-resnet8_t-resnet18 INFO: w_adv: 1.0
+[10/06 08:12:52] cifar10-resnet8_t-resnet18 INFO: w_algn: 1.0
+[10/06 08:12:52] cifar10-resnet8_t-resnet18 INFO: w_baln: 10.0
+[10/06 08:12:52] cifar10-resnet8_t-resnet18 INFO: w_dist: 1.0
+[10/06 08:12:52] cifar10-resnet8_t-resnet18 INFO: rank: -1
+[10/06 08:12:52] cifar10-resnet8_t-resnet18 INFO: is_emsember_generator_GAN_loss: y
+[10/06 08:12:52] cifar10-resnet8_t-resnet18 INFO: multiprocessing_distributed: False
+[10/06 08:12:52] cifar10-resnet8_t-resnet18 INFO: gen_loss_avg: False
+[10/06 08:12:52] cifar10-resnet8_t-resnet18 INFO: save_img: False
+[10/06 08:12:52] cifar10-resnet8_t-resnet18 INFO: logger: <Logger cifar10-resnet8_t-resnet18 (DEBUG)>
+[10/06 08:12:52] cifar10-resnet8_t-resnet18 INFO: tb: <torch.utils.tensorboard.writer.SummaryWriter object at 0x7fc45e531be0>
+[10/06 08:15:26] cifar10-resnet8_t-resnet18 INFO:  [Eval] Epoch=0 Acc@1=20.0400 Acc@5=70.9500 Loss=8.6339 Lr=0.00900
+[10/06 08:16:45] cifar10-resnet8_t-resnet18 INFO:  [Eval] Epoch=1 Acc@1=28.6000 Acc@5=81.6900 Loss=4.6956 Lr=0.00900
+[10/06 08:18:03] cifar10-resnet8_t-resnet18 INFO:  [Eval] Epoch=2 Acc@1=28.5200 Acc@5=84.3300 Loss=5.1370 Lr=0.00900
+[10/06 08:19:21] cifar10-resnet8_t-resnet18 INFO:  [Eval] Epoch=3 Acc@1=37.4300 Acc@5=85.0300 Loss=3.7569 Lr=0.00900
+[10/06 08:20:40] cifar10-resnet8_t-resnet18 INFO:  [Eval] Epoch=4 Acc@1=37.8700 Acc@5=89.4000 Loss=3.1719 Lr=0.00900
+[10/06 08:22:03] cifar10-resnet8_t-resnet18 INFO:  [Eval] Epoch=5 Acc@1=47.3200 Acc@5=93.8700 Loss=2.3604 Lr=0.00900
+[10/06 08:23:21] cifar10-resnet8_t-resnet18 INFO:  [Eval] Epoch=6 Acc@1=49.9200 Acc@5=93.8200 Loss=2.2973 Lr=0.00900
+[10/06 08:24:44] cifar10-resnet8_t-resnet18 INFO:  [Eval] Epoch=7 Acc@1=47.2600 Acc@5=93.5500 Loss=2.7476 Lr=0.00899
+[10/06 08:26:02] cifar10-resnet8_t-resnet18 INFO:  [Eval] Epoch=8 Acc@1=56.5000 Acc@5=95.4600 Loss=1.9698 Lr=0.00899
+[10/06 08:27:21] cifar10-resnet8_t-resnet18 INFO:  [Eval] Epoch=9 Acc@1=59.2600 Acc@5=96.1000 Loss=1.8322 Lr=0.00899
+[10/06 08:28:40] cifar10-resnet8_t-resnet18 INFO:  [Eval] Epoch=10 Acc@1=62.1100 Acc@5=96.8900 Loss=1.5841 Lr=0.00899
+[10/06 08:30:00] cifar10-resnet8_t-resnet18 INFO:  [Eval] Epoch=11 Acc@1=64.2300 Acc@5=96.6200 Loss=1.4443 Lr=0.00899
+[10/06 08:31:19] cifar10-resnet8_t-resnet18 INFO:  [Eval] Epoch=12 Acc@1=64.7700 Acc@5=96.7500 Loss=1.4507 Lr=0.00899
+[10/06 08:32:38] cifar10-resnet8_t-resnet18 INFO:  [Eval] Epoch=13 Acc@1=62.7600 Acc@5=97.0900 Loss=1.4366 Lr=0.00898
+[10/06 08:33:56] cifar10-resnet8_t-resnet18 INFO:  [Eval] Epoch=14 Acc@1=63.2400 Acc@5=96.2500 Loss=1.5136 Lr=0.00898
+[10/06 08:35:14] cifar10-resnet8_t-resnet18 INFO:  [Eval] Epoch=15 Acc@1=67.6000 Acc@5=97.6100 Loss=1.2860 Lr=0.00898
+[10/06 08:36:33] cifar10-resnet8_t-resnet18 INFO:  [Eval] Epoch=16 Acc@1=57.3100 Acc@5=93.2300 Loss=2.0836 Lr=0.00897
+[10/06 08:37:51] cifar10-resnet8_t-resnet18 INFO:  [Eval] Epoch=17 Acc@1=68.4700 Acc@5=97.9800 Loss=1.2571 Lr=0.00897
+[10/06 08:39:10] cifar10-resnet8_t-resnet18 INFO:  [Eval] Epoch=18 Acc@1=61.1100 Acc@5=96.2000 Loss=1.6230 Lr=0.00897
+[10/06 08:40:28] cifar10-resnet8_t-resnet18 INFO:  [Eval] Epoch=19 Acc@1=69.1200 Acc@5=97.9500 Loss=1.1945 Lr=0.00896
+[10/06 08:41:49] cifar10-resnet8_t-resnet18 INFO:  [Eval] Epoch=20 Acc@1=70.2400 Acc@5=98.0900 Loss=1.1877 Lr=0.00896
+[10/06 08:43:07] cifar10-resnet8_t-resnet18 INFO:  [Eval] Epoch=21 Acc@1=60.9500 Acc@5=96.7100 Loss=1.6317 Lr=0.00896
+[10/06 08:44:25] cifar10-resnet8_t-resnet18 INFO:  [Eval] Epoch=22 Acc@1=67.1400 Acc@5=97.4200 Loss=1.3177 Lr=0.00895
+[10/06 08:45:43] cifar10-resnet8_t-resnet18 INFO:  [Eval] Epoch=23 Acc@1=69.8200 Acc@5=97.9600 Loss=1.1854 Lr=0.00895
+[10/06 08:47:10] cifar10-resnet8_t-resnet18 INFO:  [Eval] Epoch=24 Acc@1=70.6700 Acc@5=98.2800 Loss=1.1499 Lr=0.00895
+[10/06 08:48:28] cifar10-resnet8_t-resnet18 INFO:  [Eval] Epoch=25 Acc@1=70.8700 Acc@5=98.0300 Loss=1.2007 Lr=0.00894
+[10/06 08:49:47] cifar10-resnet8_t-resnet18 INFO:  [Eval] Epoch=26 Acc@1=71.9700 Acc@5=98.0000 Loss=1.0828 Lr=0.00894
+[10/06 08:51:07] cifar10-resnet8_t-resnet18 INFO:  [Eval] Epoch=27 Acc@1=64.6000 Acc@5=97.4000 Loss=1.4756 Lr=0.00893
+[10/06 08:52:26] cifar10-resnet8_t-resnet18 INFO:  [Eval] Epoch=28 Acc@1=70.6400 Acc@5=98.0900 Loss=1.1752 Lr=0.00893
+[10/06 08:53:46] cifar10-resnet8_t-resnet18 INFO:  [Eval] Epoch=29 Acc@1=70.4000 Acc@5=98.0200 Loss=1.1550 Lr=0.00892
+[10/06 08:55:05] cifar10-resnet8_t-resnet18 INFO:  [Eval] Epoch=30 Acc@1=72.1800 Acc@5=98.5200 Loss=1.0843 Lr=0.00892
+[10/06 08:56:49] cifar10-resnet8_t-resnet18 INFO:  [Eval] Epoch=31 Acc@1=72.1700 Acc@5=98.2300 Loss=1.1237 Lr=0.00891
+[10/06 08:58:07] cifar10-resnet8_t-resnet18 INFO:  [Eval] Epoch=32 Acc@1=72.2600 Acc@5=98.2300 Loss=1.0542 Lr=0.00890
+[10/06 09:00:57] cifar10-resnet8_t-resnet18 INFO:  [Eval] Epoch=33 Acc@1=72.8400 Acc@5=98.5100 Loss=1.0641 Lr=0.00890
+[10/06 09:02:16] cifar10-resnet8_t-resnet18 INFO:  [Eval] Epoch=34 Acc@1=72.8400 Acc@5=97.9700 Loss=1.0794 Lr=0.00889
+[10/06 09:03:38] cifar10-resnet8_t-resnet18 INFO:  [Eval] Epoch=35 Acc@1=70.2300 Acc@5=98.0300 Loss=1.2003 Lr=0.00889
+[10/06 09:05:03] cifar10-resnet8_t-resnet18 INFO:  [Eval] Epoch=36 Acc@1=73.6900 Acc@5=98.5500 Loss=1.0008 Lr=0.00888
+[10/06 09:06:25] cifar10-resnet8_t-resnet18 INFO:  [Eval] Epoch=37 Acc@1=73.7800 Acc@5=98.3900 Loss=1.0328 Lr=0.00887
+[10/06 09:07:56] cifar10-resnet8_t-resnet18 INFO:  [Eval] Epoch=38 Acc@1=73.1100 Acc@5=98.1400 Loss=1.0437 Lr=0.00887
+[10/06 09:09:16] cifar10-resnet8_t-resnet18 INFO:  [Eval] Epoch=39 Acc@1=75.5100 Acc@5=98.4000 Loss=0.9264 Lr=0.00886
+[10/06 09:10:34] cifar10-resnet8_t-resnet18 INFO:  [Eval] Epoch=40 Acc@1=73.5400 Acc@5=98.2000 Loss=1.0093 Lr=0.00885
+[10/06 09:11:53] cifar10-resnet8_t-resnet18 INFO:  [Eval] Epoch=41 Acc@1=74.5900 Acc@5=98.6400 Loss=0.9543 Lr=0.00885
+[10/06 09:13:28] cifar10-resnet8_t-resnet18 INFO:  [Eval] Epoch=42 Acc@1=74.4300 Acc@5=98.5900 Loss=0.9988 Lr=0.00884
+[10/06 09:14:48] cifar10-resnet8_t-resnet18 INFO:  [Eval] Epoch=43 Acc@1=73.9100 Acc@5=98.5600 Loss=1.0174 Lr=0.00883
+[10/06 09:16:09] cifar10-resnet8_t-resnet18 INFO:  [Eval] Epoch=44 Acc@1=74.0900 Acc@5=98.4400 Loss=0.9769 Lr=0.00882
+[10/06 09:17:27] cifar10-resnet8_t-resnet18 INFO:  [Eval] Epoch=45 Acc@1=75.5100 Acc@5=98.6000 Loss=0.9170 Lr=0.00882
+[10/06 09:18:45] cifar10-resnet8_t-resnet18 INFO:  [Eval] Epoch=46 Acc@1=75.4100 Acc@5=98.4100 Loss=0.9484 Lr=0.00881
+[10/06 09:20:03] cifar10-resnet8_t-resnet18 INFO:  [Eval] Epoch=47 Acc@1=75.3100 Acc@5=98.5600 Loss=0.9436 Lr=0.00880
+[10/06 09:21:21] cifar10-resnet8_t-resnet18 INFO:  [Eval] Epoch=48 Acc@1=75.1800 Acc@5=98.4300 Loss=0.9325 Lr=0.00879
+[10/06 09:22:40] cifar10-resnet8_t-resnet18 INFO:  [Eval] Epoch=49 Acc@1=76.7400 Acc@5=98.6300 Loss=0.9027 Lr=0.00878
+[10/06 09:24:00] cifar10-resnet8_t-resnet18 INFO:  [Eval] Epoch=50 Acc@1=76.3000 Acc@5=98.5500 Loss=0.9224 Lr=0.00877
+[10/06 09:25:25] cifar10-resnet8_t-resnet18 INFO:  [Eval] Epoch=51 Acc@1=76.1300 Acc@5=98.4000 Loss=0.9204 Lr=0.00876
+[10/06 09:26:43] cifar10-resnet8_t-resnet18 INFO:  [Eval] Epoch=52 Acc@1=74.7600 Acc@5=98.6200 Loss=0.9855 Lr=0.00876
+[10/06 09:28:04] cifar10-resnet8_t-resnet18 INFO:  [Eval] Epoch=53 Acc@1=75.6100 Acc@5=98.5600 Loss=0.9592 Lr=0.00875
+[10/06 09:29:23] cifar10-resnet8_t-resnet18 INFO:  [Eval] Epoch=54 Acc@1=74.7600 Acc@5=98.6000 Loss=0.9756 Lr=0.00874
+[10/06 09:30:41] cifar10-resnet8_t-resnet18 INFO:  [Eval] Epoch=55 Acc@1=75.4400 Acc@5=98.6200 Loss=0.9294 Lr=0.00873

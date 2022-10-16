@@ -1,3 +1,7 @@
 data
 logs
 .vscode
+runs/
+wandb/
+tb_log/
+ckpt/
